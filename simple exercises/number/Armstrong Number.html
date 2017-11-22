@@ -1,0 +1,35 @@
+<pre>
+	1 - Armstrong Number
+
+  - digit numbers equal to the sum of th powers of their digits (a finite sequence) are called Armstrong numbers or plus perfect number and are given by 1, 2, 3, 4, 5, 6, 7, 8, 9, 153, 370, 371, 407, 1634, 8208
+
+</pre>
+
+<script type="text/javascript">
+	
+var arm=0,a,b,c,d,num=371;
+
+function armstr()
+{   
+    var temp=num;
+
+    while(temp>0)
+    {
+        a=temp%10;
+        temp=parseInt(temp/10); // convert float into Integer
+        arm=arm+a*a*a;
+    }
+    if(arm==num)
+    {
+       return ("Armstrong number");
+    }
+    else
+    {
+        return ("Not Armstrong number");
+    }
+}
+document.write('Armstrong Number : ( 3^3 + 7^7 + 1^1 = 371 ) =  ' + armstr());
+document.write("<div>-------------------------</div>");
+
+
+</script>

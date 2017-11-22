@@ -1,0 +1,6 @@
+https://www.w3resource.com/javascript-exercises/javascript-array-exercise-4.php
+
+https://www.w3resource.com/javascript-exercises/javascript-array-exercises.php#EDITOR
+
+
+https://stackoverflow.com/questions/2270910/how-to-convert-sequence-of-numbers-in-an-array-to-range-of-numbers

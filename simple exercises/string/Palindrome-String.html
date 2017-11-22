@@ -1,0 +1,30 @@
+<pre>
+    - checks the given number as well as string is palindrome or not 
+    1 - Palindrome String - reverse string also same
+</pre>
+
+<script type="text/javascript">
+    
+var str="madam",num=(121).toString();
+function checkPalindrome(str) {
+
+    revStr = "";
+    var i = str.length;
+
+    for(var j=i; j>=0; j--) {
+        revStr = revStr+str.charAt(j);
+    }
+
+    if(str == revStr) {
+        return (" Palindrome");
+    } else {
+        return (" not a Palindrome");
+    }
+}
+document.write('Palindrome String : '+str+' =  ' + checkPalindrome(str));
+document.write("<br/>");
+document.write('Palindrome Number : '+num+' =  ' + checkPalindrome(num));
+document.write("<div>-------------------------</div>");
+
+
+</script>

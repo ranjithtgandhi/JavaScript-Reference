@@ -1,0 +1,136 @@
+<script type="text/javascript">
+	
+		function generatePyramid() {
+		    var row = 5;
+		    var output="";
+		    for (var i = 1; i <= row; i++) {
+
+		    	for(j=1;j<=row-i;j++)
+				{
+		            output += "&nbsp; &nbsp;&nbsp; ";
+				}
+
+				for(j=i;j>=1;j--)
+				{   
+					output += j+" &nbsp; ";
+				}
+		        document.write(output);
+                    output = "<br/>";
+		       
+		    }
+		}  
+		generatePyramid();
+
+	    document.write("<div>-------------------------</div>");
+
+
+
+
+		function generatePyramid1() {
+                var row = 5;
+                var output = "";
+                for (var i = 1; i <= row; i++) {
+                    for (var j = 1; j <= row; j++) {
+                        if(j <= (row - i)){
+                            output += "&nbsp; &nbsp;&nbsp; ";
+                        } else {
+                            output += j+" &nbsp; ";
+                        }
+                    }
+                    document.write(output);
+                    output = "<br/>";
+                }
+            }
+            generatePyramid1();
+
+	    document.write("<div>-------------------------</div>");
+
+window.onload = function (){
+
+function generatePyramid2() {
+	    var row = 5;
+	    var a=1;var output="";
+	    for (var i = 1; i <= row; i++) {
+	    	
+	    	for(j=row;j>=1;j--)
+			{
+	            if(j > i){
+	            	output += " &nbsp;&nbsp; &nbsp;&nbsp;  ";	
+	            }else{
+	            	output += " &nbsp;"+ (a++) +" &nbsp; ";	
+	            }
+			}
+	        document.getElementById('div3').innerHTML += output;
+            output = "<br/>";
+	        
+	       
+	    }
+	}  
+	generatePyramid2();
+};
+
+		/*generatePyramid1();
+
+			function generatePyramid() {
+                var row = 5;
+                var output = "";
+                for (var i = 1; i <= row; i++) {
+                    for (var j = 1; j <= row; j++) {
+                        if(j <= (row - i)){
+                            output += "&nbsp; &nbsp;&nbsp; ";
+                        } else {
+                            output += j+" &nbsp; ";
+                        }
+                    }
+                    document.write(output);
+                    output = "<br/>";
+                }
+            }
+            generatePyramid();*/
+/*
+          function generatePyramid1() {
+	    var totalNumberofRows = 5;
+	    var output="";
+	    for (var i = 1; i <= totalNumberofRows; i++) {
+
+	    	for(j=1;j<=totalNumberofRows-i;j++)
+			{
+	            output += " ";
+			}
+
+			for(j=i;j>=1;j--)
+			{   
+				output +=j;
+			}
+	        console.log(output);
+	       
+	    }
+	}  
+	generatePyramid1();*/
+
+	/*function generatePyramid2() {
+	    var totalNumberofRows = 5;
+	    var a=1;
+	    for (var i = 1; i <= totalNumberofRows; i++) {
+	    	var output="";
+	    	for(j=totalNumberofRows;j>=1;j--)
+			{
+	            if(j > i){
+	            	output += " ";	
+	            }else{
+	            	output += a++ ;	
+	            }
+			}
+	        console.log(output);
+	          output="";
+	        
+	       
+	    }
+	}  
+	generatePyramid2();*/
+
+
+	
+
+</script>
+<div style="text-align:center;" id="div3"></div>

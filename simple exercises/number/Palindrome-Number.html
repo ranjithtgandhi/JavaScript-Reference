@@ -1,0 +1,35 @@
+<pre>
+    1 - Palindrome Number - 101, 111, 121, 131, 141, 151, 161, 171, 181, 191
+
+  - that remains the same when its digits are reversed
+
+</pre>
+
+<script type="text/javascript">
+    
+var a,b,temp=0;
+var num = 121;
+function isPalindrome(no) {
+
+    b=no;
+    while(no>0)
+    {
+        a=no%10;
+        no=parseInt(no/10);
+        temp=temp*10+a;
+    }
+
+    if(temp==b)
+    {
+        return  ("Palindrome number");
+    }
+        else
+    {
+        return ("Not Palindrome number");
+    }
+}
+document.write('Prime Number : '+num+' =  ' + isPalindrome(num));
+document.write("<div>-------------------------</div>");
+
+
+</script>

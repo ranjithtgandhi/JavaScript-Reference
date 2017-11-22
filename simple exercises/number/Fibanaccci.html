@@ -1,0 +1,90 @@
+<pre>
+
+	1 - fibanaccci  - while loop
+	2 - fibanaccci  - Recursion 
+	3 - fibanaccci  - for loop
+
+</pre>
+
+<script type="text/javascript">
+
+
+
+var n=15;
+function fiboLoop(num){
+	  var a = 1, b = 0, temp;
+	  var dis ='';
+	  while (num >= 1){
+	    temp = a;
+	    a = a + b;
+	    b = temp;
+	    num--;
+	    dis += b +" ";
+	    
+	  }
+	  console.log(dis);
+	  dis = '';
+
+	  return b;
+
+}
+
+console.log(fiboLoop(n));
+
+
+
+
+function fiboRec(num) {
+	var r,dis='';
+
+  if (num <= 1) return 1;
+  r = fiboRec(num - 1) + fiboRec(num - 2);
+
+  dis += r +" ";
+  dis='';
+
+  return r;
+}
+
+console.log(fiboLoop(n));
+
+
+
+var f1=0;
+var f2=1;
+var i,f3;
+for(i=1; i<n; i++)
+{
+	f3=f1+f2;
+	document.write("",f3," ");
+	f1=f2;
+	f2=f3;
+}
+/*
+function fibonacci1(number) {
+
+	var sequence = [1, 1];
+
+	for (var i = 2; i < number; i++) {
+		sequence[i] = sequence[i-1]+ sequence[i-2];
+	}
+
+	return sequence[number-1];
+}
+fibonacci1*/
+
+//console.log(fib(8));
+
+var Fibanacci = function(n){
+    /*if(n <= 1) {
+        return n;
+    } else {
+        return this.fib(n - 1) + this.fib(n - 2);
+    }*/
+    
+};
+
+var fibLoop = new Fibanacci();
+
+
+</script>

@@ -1,0 +1,74 @@
+<pre>
+	3 - examples
+
+</pre>
+
+<script type="text/javascript">
+
+var numbers = [12, 10, 15, 11, 14, 13, 16];
+
+ var arr = arr2 = arr3 = [].concat(numbers);
+
+	// example - 1
+function bubbleSort(array) {
+  var done = false;
+  while (!done) {
+    done = true;
+    for (var i = 1; i < array.length; i += 1) {
+      if (array[i - 1] > array[i]) {
+        done = false;
+        var tmp = array[i - 1];
+        array[i - 1] = array[i];
+        array[i] = tmp;
+      }
+    }
+  }
+
+  return array;
+}
+
+bubbleSort(arr);
+console.log(arr);
+
+
+
+
+// example - 2
+
+var bubbleSort2 = function(array){
+  let swapped = false;
+  for( let i = 1; i < array.length; i++ ) {
+    const prev = array[i - 1];
+    const current = array[i];
+
+    // If the previous number is > than the current, swap them around
+    if( prev > current ) {
+        swapped = true;
+      array[i] = prev;
+          array[i - 1] = current;
+    }
+
+  }
+  // If there has been a swap, sort over the array again
+  if( swapped ) {
+    return bubbleSort2(array);
+  }
+};
+
+ bubbleSort2(arr2);
+ console.log(arr2);
+
+
+
+
+
+
+
+// example - 3
+
+
+arr3.sort(function(a, b){return a-b});
+
+console.log(arr3);
+
+</script>

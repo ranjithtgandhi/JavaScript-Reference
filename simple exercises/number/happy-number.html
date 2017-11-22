@@ -1,0 +1,35 @@
+<pre>
+	1 - Happy Number - 1, 7, 10, 13, 19, 23, 28, 31, 32, 44, 49, 68, 70, 79, 82, 86, 91, 94, 97, 100
+
+    - Starting with any positive integer, replace the number by the sum of the squares of its digits in base-ten, and repeat the process until the number either equals 1 
+
+</pre>
+
+<script type="text/javascript">
+    var num =7;
+function happyNum(){
+  
+  
+  for (var i = 0; i < 10000; i++) {
+    num = newNumber(num);
+  }
+  return num == 1 ? "it's happy number": "it's not happy number";
+
+ }
+
+  function newNumber(num){
+  var sum = 0;
+  var temp = 0;
+  while(num!=0){
+    temp = num%10;
+    num = (num-temp)/10;
+    sum +=  temp*temp;
+  }
+  return sum;
+}
+
+document.write('Happy Number : '+ num +' =  ' + happyNum());
+document.write("<div>-------------------------</div>");
+
+
+</script>

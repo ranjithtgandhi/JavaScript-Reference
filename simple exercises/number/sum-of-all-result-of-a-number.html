@@ -1,0 +1,33 @@
+<pre>
+	example - 1 -  Sum of all result a number Javascript
+	example - 2 -  Sum of all result a number Javascript
+
+</pre>
+
+<script type="text/javascript">
+	
+
+//example - 1 -  Sum of all result a number Javascript
+var number = 57;
+function sumDigits(number) {
+        while( number > 9){
+            var num = number.toString();
+            var sum = 0;
+            for (var i = 0; i < num.length; i++) {
+                sum += parseInt(num.charAt(i), 10);
+            }
+            number = sum;
+            console.log("in loop = "+ number);
+        }
+		return sum;
+    }
+
+console.log(sumDigits(number));
+
+//example - 2 -  Sum of all result a number Javascript
+
+var sum2 = ((number-1)%9+1);
+console.log(sum2);
+
+
+</script>

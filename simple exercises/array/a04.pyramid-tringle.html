@@ -1,0 +1,26 @@
+<script type="text/javascript">
+	
+	function generatePyramid1() {
+	    var totalNumberofRows = 5;
+	    var output="";
+	    for (var i = 1; i <= totalNumberofRows; i++) {
+
+	    	for(j=1;j<=totalNumberofRows-i;j++)
+			{
+	            output += " ";
+			}
+
+			for(j=i;j>=1;j--)
+			{
+				output += ' '+j;
+			}
+	        console.log(output);
+	        output="";
+	    }
+	}  
+	generatePyramid1();
+
+
+	
+
+</script>

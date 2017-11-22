@@ -1,0 +1,39 @@
+https://stackoverflow.com/questions/45303520/check-whether-given-number-is-happy-or-not
+https://www.w3resource.com/javascript-exercises/javascript-conditional-statements-and-loops-exercise-8.php
+
+
+
+
+
+
+
+
+$(document).ready(function(){
+      var num = 5239;
+      var i = 0;
+      var isHappy = false;
+     	for(i ; i < 100; i++){
+      	num = newNumber(num);
+        console.log(num);
+        if(num == 1){
+        	isHappy = true;
+        	alert("it's happy number");
+          break;
+        }
+      }
+      if(!isHappy){
+      		alert("it's not happy number");
+			}
+      
+ });
+   
+function newNumber(num){
+  var sum = 0;
+  var temp = 0;
+  while(num!=0){
+    temp = num%10;
+    num = (num-temp)/10;
+    sum +=  temp*temp;
+  }
+  return sum;
+}

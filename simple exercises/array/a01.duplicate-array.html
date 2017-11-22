@@ -1,0 +1,70 @@
+<pre>
+	5 - examples
+
+</pre>
+
+<script type="text/javascript">
+var numbers = [1, 2, 2, 3, 4, 5, 5, 5, 6, 7, 7, 8, 9, 10, 10];	
+
+
+	// example - 1
+	var arr =arr1 = arr2 = arr3 = arr4 = [].concat(numbers);
+var unique = arr.filter(function(elem, index, self) {
+    return  self.indexOf(elem) == index;
+})
+console.log(unique);
+
+
+// example - 2
+function squash(arr){
+    var tmp = [];
+    for(var i = 0; i < arr.length; i++){
+        if(tmp.indexOf(arr[i]) == -1){
+        	tmp.push(arr[i]);
+        }
+    }
+    return tmp;
+}
+
+console.log(squash(arr2));
+
+
+
+// example - 3
+var uniq = function(array) {
+    var unique = [];
+    for (let i = 0; i < array.length; i++) {
+        let current = array[i];
+        if (unique.indexOf(current) < 0) unique.push(current);
+    }
+    return unique;
+}
+
+console.log(uniq(arr1));
+
+
+
+
+
+
+// example - 4
+
+let fruits = ['apple','banana','orange','apple','mango','banana'];
+let fruits_without_duplicates = Array.from(new Set(fruits));
+
+
+let number_without_duplicates = Array.from(new Set(arr3));
+
+console.log(fruits_without_duplicates); //["apple", "banana", "orange", "mango"]
+console.log(number_without_duplicates); 
+
+
+
+// example - 5
+let removeDuplicates =  [...(new Set(arr4))];
+console.log(removeDuplicates);
+
+
+
+
+</script>

@@ -1,0 +1,60 @@
+<pre>
+	4 - examples
+	2 - recursive examples
+
+</pre>
+<script type="text/javascript">
+	
+
+//example - 1 -  Sum all the digits of a number Javascript
+
+var value = value1 = value2 = value3 = 2568,
+    sum1 = 0;
+
+while (value) {
+    sum1 += value % 10;
+    value = Math.floor(value / 10);
+}
+
+console.log(sum1);
+
+
+
+
+
+
+
+//example - 2 -  Sum all the digits of a number Javascript
+
+var sum2 = value1.toString().split('').map(Number).reduce(function (a, b) { return a + b; }, 0);
+console.log(sum2);
+
+
+
+
+
+
+//example - 3 -  Sum all the digits of a number Javascript  - recursive
+
+var sumDigits = function (number) {
+    var remainder = number % 10;
+    var sum = remainder;
+    if(number >= 10) {
+        var rest = Math.floor(number / 10);
+        sum += sumDigits(rest); 
+    }
+    return sum;
+};
+console.log(sumDigits(value2));
+
+
+
+
+//example - 3 -  Sum all the digits of a number Javascript  - recursive
+function sumDigit(n){
+  return n == 0 ? 0 : n % 10 + sumDigits(Math.floor(n/10));
+}
+console.log(sumDigit(value3));
+
+
+</script>

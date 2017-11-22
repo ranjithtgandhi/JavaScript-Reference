@@ -1,0 +1,23 @@
+<pre>
+	2 - examples
+
+</pre>
+<script type="text/javascript">
+	
+// example - 1 :-  sum of an array using recursion Javascript
+var arr = [1, 2, 3, 4, 5, 6];	
+var sum = function(array) {
+    return (array.length === 0) ? 0 : array[0] + sum(array.slice(1));
+}
+console.log(sum(arr));
+// example - 2 :-  sum of an array using recursion Javascript
+
+var sumEs6 = (array) => (array.length === 0) ? 0 : array[0] + sum(array.slice(1));
+console.log(sumEs6(arr));
+
+
+
+
+
+
+</script>

@@ -1,0 +1,51 @@
+<script type="text/javascript">
+	
+	function generatePyramid1() {
+	    var totalNumberofRows = 5;
+	    var output="";
+	    for (var i = 1; i <= totalNumberofRows; i++) {
+	        for (var j = 1; j <= i; j++) {
+	            output+=j + "     ";
+	        }
+	        console.log(output);
+	        output="";
+	    }
+	}  
+	generatePyramid1();
+
+
+	function generatePyramid2() {
+	    var totalNumberofRows = 5;
+	    var output="",a=1;
+	    for (var i = 1; i <= totalNumberofRows; i++) {
+	        for (var j = 1; j <= i; j++) {
+	            output += (a++) +' ';	           
+	        }
+	        console.log(output);
+	        output="";
+	        
+	       
+	    }
+	}  
+	generatePyramid2();
+
+	function generatePyramid3() {
+	    var totalNumberofRows = 5;
+	    var output="",a;
+	    for (var i = 1; i <= totalNumberofRows; i++) {
+	    	a=i;
+	        for (var j = 1; j <= i; j++) {
+	            output += a +' ';
+	             a += 5-j;	           
+	        }
+	        console.log(output);
+	          output="";
+	        
+	       
+	    }
+	}  
+	generatePyramid3();
+
+	
+
+</script>

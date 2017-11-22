@@ -1,0 +1,46 @@
+<pre>
+	1 - Prime Number - 2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53
+
+  - is a natural number greater than 1 that has no positive divisors other than 1 and itself.
+
+</pre>
+
+<script type="text/javascript">
+	
+
+var num = 11;
+function isPrime(num) {
+
+    if(num < 2) return false;
+
+    for(var i = 2; i < num; i++){
+        if(num%i==0){
+            return false;
+        }
+    }
+    return true;
+}
+document.write('Prime Number : '+num+' =  ' + isPrime(num));
+document.write("<div>-------------------------</div>");
+
+
+function isPrime2(num) {
+  for(var i = 2; i < num; i++)
+    if(num % i === 0) return false;
+  return num !== 1;
+}
+
+document.write('Prime Number : '+num+' =  ' + isPrime2(num));
+document.write("<div>-------------------------</div>");
+
+
+function isPrime3(num) {
+  for(var i = 2; i < num/2; ++i)
+    if(num % i === 0) return false;
+  return num !== 1;
+}
+
+document.write('Prime Number : '+num+' =  ' + isPrime3(num));
+document.write("<div>-------------------------</div>");
+
+</script>
