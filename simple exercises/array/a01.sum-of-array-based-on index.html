@@ -1,0 +1,50 @@
+<pre>
+	3 - examples
+
+</pre>
+
+<script type="text/javascript">
+
+	var a = [1, 2, 3, 4];
+var b = [1, 2, 3, 4];
+
+function sumArray(a, b) {
+      var c = [];
+      for (var i = 0; i < Math.max(a.length, b.length); i++) {
+        c.push((a[i] || 0) + (b[i] || 0));
+      }
+      return c;
+}
+
+// First Use Case.
+
+
+console.log(sumArray(a,b))
+
+
+// example - 2
+
+
+
+var arr1 = [2,3,4,5];
+var arr2 = [4,3,3,1];
+//would result in 34 (4*2+3*3+4*3+5*1).
+var sum = 0;
+for(var i=0; i< arr1.length; i++) {
+    sum += arr1[i]*arr2[i];
+}
+
+console.log(sum)
+
+
+// sum of array
+var elmt=[0,1,2,3,4,7,8,9,10,11];
+var sum = 0;
+for( var i = 0; i < elmt.length; i++ ){
+    sum += parseInt( elmt[i], 10 ); //don't forget to add the base
+}
+
+var avg = sum/elmt.length;
+
+console.log("The sum of all the elements is: "+sum +" The average is: "+avg)
+</script>
